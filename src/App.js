@@ -1,19 +1,4 @@
-// import React from 'react';
 
-// import './App.css';
-
-// function Header() {
-//   return <h1>Little lemom restaurant</h1>;
-// }
-
-// function App() {
-//   return <Header />;
-
-// }
- 
-
-
-// export default App;
 
 import React from 'react';
 import './App.css';
@@ -21,6 +6,7 @@ import Home from './Home';
 import Menu from './Menu';
 import Orderonline from './Orderonline.js';
 import Login from './Login';
+import BookingPage from  './BookingPage.js';
 import {Routes, Route, Link} from 'react-router-dom';
 
 
@@ -36,6 +22,7 @@ function App() {
         <Link to="/Menu" className="nav-item">Menu</Link>
         <Link to="/Orderonline" className="nav-item">Orderonline</Link>
         <Link to="/Login" className="nav-item">Login</Link>
+        <Link to="/booking" className="nav-item">Booking</Link> 
 
       </nav>
       <Routes>
@@ -43,8 +30,10 @@ function App() {
     <Route path= "/menu" element={<Menu />}/>
     <Route path= "/orderonline" element={<Orderonline />}/>
     <Route path= "/login" element={<Login />}/>
+    <Route path="/booking" element={<BookingPage />} /> 
     </Routes>
     </div>
+
 
 
   );
